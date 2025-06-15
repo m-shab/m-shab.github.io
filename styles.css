@@ -123,6 +123,7 @@ html {
     font-weight: 800;
     color: rgb(32, 32, 165);
     text-shadow: 2px 2px rgb(88, 212, 212);
+    font-family: "Roboto Mono", monospace;
 }
 
 #about-caption {
@@ -193,6 +194,7 @@ html {
     font-weight: 800;
     color: rgb(32, 32, 165);
     text-shadow: 2px 2px rgb(88, 212, 212);
+    font-family: "Roboto Mono", monospace;
 }
 
 .item {
@@ -225,6 +227,7 @@ html {
     font-weight: 800;
     color: rgb(32, 32, 165);
     text-shadow: 2px 2px rgb(88, 212, 212);
+    font-family: "Roboto Mono", monospace;
 }
 
 #container-2 {
@@ -251,6 +254,7 @@ html {
 
 #contact-header {
     font-weight: 800;
+    font-family: "Roboto Mono", monospace;
     color: rgb(32, 32, 165);
     text-shadow: 2px 2px rgb(88, 212, 212);
 }
