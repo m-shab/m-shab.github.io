@@ -1,0 +1,260 @@
+body {
+    font-family: "Merriweather", serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#header {
+    display: flex;
+    column-gap: 20px;
+    justify-content: flex-end;
+    padding-right: 150px;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 40px;
+    transition: background-color 0.3s;
+}
+
+#name {
+    margin-right: auto;
+    font-family: "Roboto Mono", monospace;
+    padding-left: 150px;
+    font-weight: 1000;
+    color: white;
+}
+
+#header:hover {
+    background-color:rgb(95, 158, 160, 0.6);
+    color: white;
+    opacity: 100%;
+}
+
+.header-page {
+    position: relative;
+    text-decoration: none;
+    color: rgb(255, 255, 255, 0.6);
+    font-family: "Roboto Mono", monospace;
+    font-style: normal;
+    font-size: 15px;
+}
+
+.header-page::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background-color: white;
+    color: rgb(255, 255, 255, 1);
+    transition: width .3s;   
+}
+
+.header-page:hover:after {
+    width: 100%;
+}
+
+#first-block {
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 100%;;
+    z-index: -1;
+    /* how do you even keep images in good quality */
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/055/306/872/small_2x/serene-twilight-landscape-mountains-lake-and-starry-night-sky-reflection-free-photo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.85;
+    justify-content: center;
+    align-items: center;
+}
+
+#intro {
+    position: relative;
+    color: white;
+    font-size: 100px;
+}
+
+#caption {
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+    font-size: 20px;
+}
+
+#about-block {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    /* i know u said not to use margin, but for the header layering i didn't know any othr way */
+    margin-top: 530px;
+    height: 500px;
+    gap: 20px
+}
+
+#about-left-col {
+    padding-left: 150px;
+    background-color: rgb(95, 158, 160, 0.345);
+    margin: auto;
+    display: block;
+    flex-grow: 1;
+}
+
+#about-right-col {
+    padding-left: 20px;
+    background-color: white;
+    flex-grow: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: middle;
+    column-gap: 1px;
+}
+
+#about-header {
+    font-weight: 800;
+    color: rgb(32, 32, 165);
+    text-shadow: 2px 2px rgb(88, 212, 212);
+}
+
+#about-caption {
+    font-family: "Roboto Mono", monospace;;
+}
+
+
+#resume-button {
+  display: inline-block;
+  font-family: "Roboto Mono", monospace;
+  border-radius: 4px;
+  background-color: rgb(95, 158, 160, 0.6);
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  width: 185px;
+  transition: all 0.5s;
+  cursor: pointer;
+  display: block;
+  border: none;
+}
+
+#resume-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#resume-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#resume-button:hover span {
+  padding-right: 25px;
+}
+
+#resume-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#experience-block {
+    padding-top: 10px;
+    background-color:  rgb(95, 158, 160, 0.345);
+    height: 720px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; 
+}
+
+#experience-header {
+    flex-wrap: nowrap;
+    font-weight: 800;
+    color: rgb(32, 32, 165);
+    text-shadow: 2px 2px rgb(88, 212, 212);
+}
+
+.item {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 2px solid black;
+    padding: 10px;
+    height: 270px;
+    width: 25%;
+    text-align: center;
+    justify-content: center;
+    align-content: fi;
+}
+
+.experience-icon {
+    background-color:  rgb(95, 158, 160, 0.6);
+    border-radius: 15px 50px 30px;
+    padding: 2px;
+}
+
+#testimonial-block {
+    height: 300px;
+    text-align: center;
+    margin: 30px;
+    background-color: rgb(108, 151, 209, 0.6);
+}
+
+#testimonial-header {
+    padding-top: 20px;
+    font-weight: 800;
+    color: rgb(32, 32, 165);
+    text-shadow: 2px 2px rgb(88, 212, 212);
+}
+
+#container-2 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.item-2 {
+    width: 30%;
+    height: 200px;
+}
+
+.item-2:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 2px solid black;
+}
+
+#contact-block {
+    height: 100px;
+    justify-content: center;
+    text-align: center;
+}
+
+#contact-header {
+    font-weight: 800;
+    color: rgb(32, 32, 165);
+    text-shadow: 2px 2px rgb(88, 212, 212);
+}
+
+#icon {
+   width: 50px;
+}
