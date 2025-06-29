@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    background-image: url("Group 6.png");
+    height: 294px
+}
+
+#title {
+    position: absolute;
+    top: 100px;
+    font-size: 72px;
+    left: 160px;
+    color: #F2F2F2;
+    font-weight: 400;
+    font-family: "Rajdhani", sans-serif;;
+}
+
+#input-field {
+    position: absolute;
+    top: 198px;
+    left: 160px;
+    display: flex;
+}
+
+#question-input {
+    height: 65px;
+    width:892px;
+    font-weight: 400;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 32px;
+    color: #232226;
+    padding-left: 28px;
+    border-radius: 0;
+    background-color: #F2F2F2;
+    border: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.ad-button {
+    height: 65px;
+    width: 70px;
+    border-radius: 0;
+    border: none;
+    background-color: #C2D91A;
+    font-size: 50px;
+    color: white;
+    font-weight: 500;
+}
+
+.ad-button:hover {
+    box-shadow: rgb(0, 0, 0) 0px 0px 11px;
+}
+
+#questions-field {
+    position: relative;
+    top: 0;
+    padding-top: 0;
+    min-height: 100vh;
+    height: auto;
+    background-color: rgba(35,34,38,255);
+    padding-bottom: 30px;
+}
+
+#questions-list {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 160px;
+    width: 990px;
+}
+
+li.question-item {
+    padding-top: 15px;
+    padding-left: 28px;
+    font-weight: 400;
+    height: 400px;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 32px;
+    color: #232226;
+    background-color: #F2F2F2;
+}
+
+.options-list {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.option {
+    font-family: "Rajdhani", sans-serif;
+    font-size: 32px;
+    color: #232226;
+    width: 840px;
+    padding-left: 23px;
+    background-color: #F2F2F2;
+    border: none;
+}
+
+li.option-item {
+    width: 930px;
+    height: 65px;
+    border: solid;
+    background-color: #F2F2F2;
+    border-color: #26011C;
+    border-radius: 0;
+    border-width: 1;
+    display: flex;
+    align-items: center;
+}
+
+li.option-item:nth-child(n + 2) {
+    border-top: none;
+}
+
+.radio-button {
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 25px;
+    height: 25px;
+    accent-color: black;
+}
+
+li.option-item.no-border {
+    border: none;
+}
+
+.option:focus {
+    outline: none;
+    border: none;
+}
+
+
+.delete-button {
+    font-size: 24px;
+    padding: 5px;
+    border: none;
+    font-family: "Rajdhani", sans-serif;
+    color: #232226;
+    font-weight: 400;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+}
+
+.delete-div {
+    padding: 5px;
+    margin-left: 840px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    width: 90px;
+}
+
+.delete-div > img {
+    width: 23px;
+    height: 25px;
+}
+
+.delete-div:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 11px;
+    border-radius: 20px;
+}
+
