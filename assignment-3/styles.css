@@ -1,0 +1,163 @@
+body {
+    padding: 0;
+    background-image: url("beige.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    padding-top: 2%;
+    text-align: center;
+    padding-bottom: 2%;
+    background: -webkit-linear-gradient(#ff005e, #777d04);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#title {
+    padding-top: 10%;
+    text-align: center;
+    padding-bottom: 2%;
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+    animation: glow 4s infinite alternate;
+}
+
+@keyframes glow {
+        0% {
+            text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+        }
+        100% {
+            text-shadow: 0 0 10px #d1ad0d, 0 0 20px #a3b40a, 0 0 40px #afd117, 0 0 80px #988a05, 0 0 160px #777d04;
+        }
+}
+
+#pages {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.page {
+    text-decoration: none;
+    font-family: "Winky Rough", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    color: rgb(1, 1, 0);
+    transition: 0.3s;
+} 
+
+.page:hover {
+    color: #ff005e;
+}
+
+.sub-heading {
+    padding-left: 2rem;
+    font-family: "Winky Rough", sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    color: rgb(1, 1, 0);
+}
+
+#catalogue-div {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.input {
+    height: 2rem;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#add-button {
+    width: 80px;
+    height: 30px;
+    border-radius: 2rem;
+    display: block;
+    margin: 20px auto 0 auto; 
+    background-color:#ff005e;
+    color: white;
+    transition: 0.3s;
+}
+
+#add-button:hover {
+    background-color: white;
+    color: #ff005e;
+}
+
+.book-card {
+    border-radius: 1rem;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    width: 250px;
+    text-align: center;
+}
+
+.book-cover {
+    width: 120px;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+#books-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.home {
+    position: absolute;
+    text-decoration: none;
+    top: 30px;
+    left: 2.5rem;
+    font-size: 1.5rem;
+    color: rgb(103, 99, 99);
+}
+
+#search-div {
+    display: flex;
+    gap: 5px;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+#search-input {
+    height: 3rem;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+}
+
+#search-button {
+    width: 90px;
+    height: 3rem;
+    border-radius: 10px;
+    display: block;
+    background-color:#ff005e;
+    color: white;
+    transition: 0.3s;
+}
+
+#search-button:hover {
+    background-color: white;
+    color: #ff005e;
+}
+
+#search-list {
+    padding-top: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}

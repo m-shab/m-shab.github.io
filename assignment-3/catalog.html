@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title> Catalog</title>
+</head>
+<body>
+    <a class="home" href="index.html"> ↵ Back</a>
+    <h1 class="header">Book Catalogue</h1>
+    <h2 class="sub-heading">Add New Book</h2>
+    <div id="catalogue-div">
+        <input type="text" class="input" placeholder="Book Title" id="new-title">
+        <input type="text" class="input" placeholder="Author Name" id="new-author">
+        <input type="url" class="input" placeholder="Cover Image URL" id="new-url">
+        <input type="number" class="input" placeholder="Price" id="new-price">        
+    </div>
+    <button type="submit" id="add-button">Submit</button>
+
+    <h2 class="sub-heading">All Books</h2>
+    <div id="books-list">
+    </div>
+    <script src="code-catalog.js"></script>
+</body>
+</html>
